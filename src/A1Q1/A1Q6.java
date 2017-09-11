@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @author bonsk5852
  */
 public class A1Q6 {
-    
+
     /**
      * @param args the command line arguments
      */
@@ -27,7 +27,8 @@ public class A1Q6 {
             System.out.println("I said to enter a number BETWEEN 50 AND 100!!!");
             number = input.nextInt();
         }
-        while (hundred >= number + 5) {
+        // Subtract 5 from 100 until the next number is going to be less than the inputted number.
+        while (hundred >= number) {
             System.out.println(hundred);
             hundred = hundred - 5;
         }
